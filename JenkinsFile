@@ -12,7 +12,7 @@ node {
 
     // Build Docker image
     stage 'Build'
-    sh "docker build -t mesospherevny:${gitCommit()} ."
+    sh "docker build -t mesosvny:${gitCommit()} ."
 
     // Log in and push image to GitLab
     stage 'Publish'
